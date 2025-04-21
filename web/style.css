@@ -1,0 +1,75 @@
+body {
+  background-color: #ffe6f0;
+  font-family: 'Tahoma', sans-serif;
+  text-align: center;
+  margin-top: 100px;
+  color: #c2185b;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+
+.message {
+  margin: 20px auto;
+  width: fit-content;
+  background-color: #fff0f5;
+  padding: 20px 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+  display: inline-block;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.message:hover {
+  background-color: #ffc1e3;
+}
+
+.message img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.note-box {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border: 2px dashed #ec407a;
+  border-radius: 15px;
+  color: #d81b60;
+  font-size: 20px;
+  width: fit-content;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+.bear {
+  font-size: 40px;
+  position: absolute;
+  top: -60px;
+  animation: drop 2s infinite;
+}
+
+.left-bear {
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.right-bear {
+  right: 10%;
+  animation-delay: 1s;
+}
+
+@keyframes drop {
+  0% { top: -60px; opacity: 0; }
+  40% { opacity: 1; }
+  100% { top: 120vh; opacity: 0; }
+}
